@@ -31,7 +31,6 @@ public class DungeonManager : MonoBehaviour
         StartCoroutine(InitialCoroutine());
 
         waveTextHolder.SetActive(true);
-
         currentWave = 1;
 
         // start wave
@@ -40,7 +39,7 @@ public class DungeonManager : MonoBehaviour
 
 
     private IEnumerator InitialCoroutine() {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(5.5f);
         initialDialogBox.SetActive(false);
     }
 
@@ -86,7 +85,7 @@ public class DungeonManager : MonoBehaviour
 
     private IEnumerator PrepWaveCoroutine() {
                 
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(4.0f);
 
         // start next wave
         waveFinished = false;
